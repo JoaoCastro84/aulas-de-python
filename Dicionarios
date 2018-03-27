@@ -1,0 +1,25 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Tue Mar 27 16:36:52 2018
+
+@author: joaoc
+"""
+tabela = {"Alface" : 0.45,
+          "Batata" : 1.28,
+          "Tomate" : 2.30,
+          "Feijao" : 1.50}
+while True:
+    produto = input("Digite o nome do produto. Digite  'Fim' para sair ou um nome do produto" )
+    if produto =="Fim":
+        break
+    if produto in tabela:
+        print("Preco %5.2f" % tabela[produto])
+    else:
+            print("Produto não encontrado!!")
+            cond =input ("Voce deseja incluir digite 'sim', se não quiser digite 'Nao'")
+            if cond=="Nao":
+                break
+            if cond=="sim":
+                tabela=produto;
+            
+
